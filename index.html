@@ -65,6 +65,7 @@
                         <p class="text-sm text-gray-300">• Programming & problem solving</p>
                         <p class="text-sm text-gray-300">• Playing guitar</p>
                         <p class="text-sm text-gray-300">• Strength training</p>
+                        <p class="text-sm text-gray-300">• Investing/Stocks</p>
                     </div>
                 </div>
                 
@@ -74,7 +75,9 @@
                     <div class="ml-2">
                         <div>
                             <i class="fa-solid fa-circle text-green-300 inline-block"></i>
-                            <p class="text-sm text-gray-300 inline-block">= High experience,  </p>
+                            <p class="text-sm text-gray-300 inline-block">= High experience</p>
+                        </div>
+                        <div>
                             <i class="fa-solid fa-circle text-red-400 inline-block"></i>
                             <p class="text-sm text-gray-300 inline-block">= Experience, but not much</p>
                         </div>
@@ -125,11 +128,15 @@
                                 </div>
                                 <div>
                                     <i class="fa-solid fa-ellipsis-vertical text-yellow-300 inline-block"></i>
-                                    <p class="text-sm text-gray-300 inline-block ml-1">Agileday</p>
+                                    <p class="text-sm text-gray-300 inline-block ml-1">Hubspot</p>
                                 </div>
                                 <div>
                                     <i class="fa-solid fa-ellipsis-vertical text-yellow-300 inline-block"></i>
-                                    <p class="text-sm text-gray-300 inline-block ml-1">Hubspot</p>
+                                    <p class="text-sm text-gray-300 inline-block ml-1">Supabase</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-ellipsis-vertical text-yellow-300 inline-block"></i>
+                                    <p class="text-sm text-gray-300 inline-block ml-1">Agileday</p>
                                 </div>
                                 <div>
                                     <i class="fa-solid fa-ellipsis-vertical text-red-400 inline-block"></i>
@@ -148,8 +155,95 @@
         </div>
         
         <!-- Right (Projects)-->
-        <div class="bg-gray-800 rounded-lg outline outline-gray-600 md:rounded-r-lg lg:col-span-2">
-            04
+        <div class="bg-gray-800 rounded-lg outline outline-gray-600 px-8 pt-6 md:rounded-r-lg lg:col-span-2">
+            <h2 class="text-xl">Personal Projects</h2>
+            <div class="grid gap-8 mt-3 md:col-span-6 lg:grid-cols-2">
+                <div>
+                    <!--PyBot-->
+                    <div class="bg-gray-700 rounded-lg outline outline-gray-600 p-3">
+                        <a href="https://github.com/OskarEek/PyBot">PyBot</a>
+                        <div>
+                            <i class="fa-brands fa-github text-green-300 inline-block"></i>
+                            <a class="text-sm text-gray-300 inline-bloc ml-1k" href="https://github.com/OskarEek/PyBot" taget="_blank">Github</a>
+                        </div>
+                        <p class="text-sm text-gray-200 mt-1">
+                            Discord bot built with python and discord.py. The reason for
+                            this project was to have it running on our private discord server and to be
+                            able to have all the specific function we wanted into one bot. <br><br>
+
+                            The bot currently has various functions: <br>
+                        </p>
+                        <p class="text-sm text-gray-200 ml-2">
+                            • Join voice-channels and play music from youtube links that users provide in the text message <br>
+                            • Memories: Take random messages from the past and re-send them<br>
+                            • Elaborate points system, points can be used for several different bot-functions <br>
+                            • Invest points in stocks based on actual stock prices (using yahoo finance api data)<br>
+                            • Several functions to gamble points<br><br>
+                        </p>
+
+                        <p class="text-sm text-gray-200"> I have the bot running on my raspberry pi 5 that I use as a server.</p>
+                    </div>
+                    <!--LightLinks-->
+                    <div class="bg-gray-700 rounded-lg outline outline-gray-600 p-3 mt-8">
+                        <a href="https://github.com/OskarEek/LightLinks">LightLinks</a>
+                        <div>
+                            <i class="fa-brands fa-github text-green-300 inline-block"></i>
+                            <a class="text-sm text-gray-300 inline-bloc ml-1k" href="https://github.com/OskarEek/LightLinks" taget="_blank">Github</a>
+                        </div>
+                        <p class="text-sm text-gray-200 mt-1">
+                            LightLinks is a webbapp built with javascript, Svelte and Supabase. This project
+                            initial purpose was to make it very easy to send multiple url:s to someone.
+                            The idea was to be able to send 1 link that contained a collection of url:s without having
+                            to login to the webbapp in any way. <br>
+
+                            This project unfortunately died out since it became a feature creep when my initial ideas for the project
+                            was proven to not be as simple as I thought. All of the latest code exists in the "develop" branch.
+
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <!--TechnicalAnalysis-->
+                    <div class="bg-gray-700 rounded-lg outline outline-gray-600 p-3">
+                        <a href="https://github.com/OskarEek/TechnicalAnalysis">TechnicalAnalysis</a>
+                        <div>
+                            <i class="fa-brands fa-github text-green-300 inline-block"></i>
+                            <a class="text-sm text-gray-300 inline-bloc ml-1k" href="https://github.com/OskarEek/TechnicalAnalysis" taget="_blank">Github</a>
+                        </div>
+                        <p class="text-sm text-gray-200 mt-1">
+                            A tool built with python to help me experiment with day and swing trading stocks.
+                            It uses yahoofinance websocket to get live stock price updates and it also uses to yahoofinance api
+                            to get stock market history. <br><br>
+
+                            Some of the functions this tool have: <br>
+                        </p>
+                        <p class="text-sm text-gray-200 ml-2">
+                            • Get and show stock prices of one or several stocks <br>
+                            • Calculates change percentage on new prices updates<br>
+                            • Calculates and check for bullish and bearish divergence<br>
+                            • Calculates RSI indicator<br>
+                        </p>
+                    </div>
+
+                    <!--TypeRacer-->
+                    <div class="bg-gray-700 rounded-lg outline outline-gray-600 p-3 mt-8">
+                        <a href="https://github.com/OskarEek/TypeRacer">TypeRacer</a>
+                        <div>
+                            <i class="fa-brands fa-github text-green-300 inline-block"></i>
+                            <a class="text-sm text-gray-300 inline-bloc ml-1k" href="https://github.com/OskarEek/TypeRacer" taget="_blank">Github</a>
+                        </div>
+                        <p class="text-sm text-gray-200 mt-1">
+                            Very simple Type-Racer program built in C that runs in the CLI. This was built to
+                            refresh my C programming after not having used it much since my university studies. <br><br>
+                        </p>
+                        <p class="text-sm text-gray-200 ml-2">
+                            • Generates random scentences of made up words <br>
+                            • Calculates words per minute<br>
+                            • Counts spelling mistakes/missed key-presses<br>
+                        </p>
+                    </div>
+                </div>
+            </div>   
         </div>
     </div>
 </body>
